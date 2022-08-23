@@ -1,0 +1,14 @@
+server:
+    port: 8082
+    servlet:
+        context-path: /api/assembleia
+spring:
+    application:
+        name: assembleia
+    profiles:
+        active: dev
+assembleia:
+    user-service:
+        scheme: https
+        host: user-info.herokuapp.com
+        path: /users
